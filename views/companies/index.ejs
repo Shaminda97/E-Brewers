@@ -1,0 +1,13 @@
+<h2> Search companies</h2>
+<form accept="/companies" method="GET">
+
+<label>Name</label>
+<input type="text" name="name" value="<%= searchOptions.name %>">
+<button type="submit">Search</button>
+</form>
+
+<% companies.forEach(companies => { %>
+   <div><%= companies.name %></div>
+      
+    
+<% }) %>
